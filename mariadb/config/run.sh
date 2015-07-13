@@ -12,5 +12,4 @@ else
     echo "=> Using an existing volume of MariaDB"
 fi
 
-#exec mysqld_safe
-exec mysqld_safe --tc-heuristic-recover=ROLLBACK
+exec mysqld_safe
