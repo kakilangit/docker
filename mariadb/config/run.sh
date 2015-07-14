@@ -13,3 +13,4 @@ else
 fi
 
 exec mysqld_safe
+#exec mysqld_safe --tc-heuristic-recover=ROLLBACK
