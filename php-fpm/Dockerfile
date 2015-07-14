@@ -3,7 +3,8 @@ MAINTAINER kakilangit <theguywhodrinkscoffeeandcodes@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt-get update && apt-get install -y python-software-properties && add-apt-repository ppa:ondrej/php5-5.6
+RUN echo -e "deb http://ppa.launchpad.net/ondrej/php5-5.6/ubuntu trusty main \ndeb-src http://ppa.launchpad.net/ondrej/php5-5.6/ubuntu trusty main " >> /etc/apt/sources.list
+RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 4F4EA0AAE5267A6C 
 RUN apt-get update && apt-get upgrade -y &&\
 	apt-get install -y php5-cli php5-common php5-curl php5-dev php5-gd php5-json php5-tidy php5-xsl php5-apcu php5-fpm php5-geoip php5-imagick php5-intl php5-mcrypt php5-memcache php5-memcached php5-mongo php5-mysqlnd memcached
 
@@ -18,7 +19,7 @@ RUN cd /tmp && \
     php -r "readfile('https://getcomposer.org/installer');" | php && \
     mv composer.phar /usr/local/bin/composer
     
-RUN apt-get autoremove && \
+RUN apt-get autoremove -y && \
     apt-get autoclean && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
