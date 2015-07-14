@@ -9,9 +9,9 @@ ENV TERM dumb
 
 RUN apt-get install -y software-properties-common && \
 	apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xcbcb082a1bb943db && \
-    add-apt-repository 'deb http://mariadb.biz.net.id//repo/10.0/ubuntu trusty main' && \
+    add-apt-repository 'deb http://mariadb.biz.net.id/repo/10.1/ubuntu trusty main' && \
     apt-get update && apt-get upgrade -y &&\
-	apt-get install -y mariadb-server mariadb-oqgraph-engine-10.0 pwgen && \
+	apt-get install -y mariadb-server mariadb-oqgraph-engine-10.1 pwgen && \
     rm -rf /var/lib/mysql/* && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
