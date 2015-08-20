@@ -2,7 +2,7 @@ FROM ubuntu:trusty
 MAINTAINER kakilangit <theguywhodrinkscoffeeandcodes@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive
-ENV GOVERSION 1.4.2
+ENV GOVERSION 1.5
 ENV GOOS linux
 ENV GOARCH amd64
 ENV GOPATH /gopath
