@@ -15,7 +15,7 @@ PASS=${MARIADB_PASS:-$(pwgen -s 12 1)}
 _word=$( [ ${MARIADB_PASS} ] && echo "preset" || echo "random" )
 echo "=> Creating MariaDB admin user with ${_word} password"
 
-mysql -uroot -e "INSTALL SONAME 'ha_tokudb'"
+##mysql -uroot -e "INSTALL SONAME 'ha_tokudb'"
 mysql -uroot -e "INSTALL SONAME 'ha_oqgraph'"
 mysql -uroot -e "CREATE USER 'admin'@'%' IDENTIFIED BY '$PASS'"
 mysql -uroot -e "GRANT ALL PRIVILEGES ON *.* TO 'admin'@'%' WITH GRANT OPTION"
