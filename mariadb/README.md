@@ -1,17 +1,7 @@
-Docker for MariaDB with OQGraph & TokuDB Engines
+Docker for MariaDB with OQGraph
 ====================
 
-Docker image to run a MariaDB database server with OQGraph & TokuDB Engines.
-
-Requirements
------
-
-Disabling Transparent HugePage Support for TokuDB support on your Host.
-
-https://mariadb.com/kb/en/mariadb/enabling-tokudb/#check-for-transparent-hugepage-support-on-linux
-
-
-Run scripts are based on Honglin Feng's work.
+Docker image to run a MariaDB database server with OQGraph.
 
 Usage
 -----
@@ -70,3 +60,11 @@ You can specify any name of the container by using `--name` option, which will b
 After this you can start your MariaDB image using volumes in the container created above (put the name of container in `--volumes-from`)
 
     docker run -d --volumes-from dbvolume -p 3306:3306 kakilangit/mariadb
+
+TokuDB
+------
+
+TokuDB is optional. Remove comment on my.cnf line 169 to enable TokuDB Engine.
+Disabling Transparent HugePage Support for TokuDB support on your Host.
+
+  https://mariadb.com/kb/en/mariadb/enabling-tokudb/#check-for-transparent-hugepage-support-on-linux
