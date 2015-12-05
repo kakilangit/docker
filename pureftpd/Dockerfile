@@ -46,6 +46,6 @@ ENV PUBLICHOST ftp.foo.com
 VOLUME /home/ftpusers
 
 # startup
-CMD /usr/sbin/pure-ftpd -z -c 50 -C 10 -l puredb:/etc/pure-ftpd/pureftpd.pdb -E -j -R -P $PUBLICHOST -p 30000:30009
+CMD /usr/sbin/pure-ftpd -c 50 -C 10 -l puredb:/etc/pure-ftpd/pureftpd.pdb -E -j -R -P $PUBLICHOST -p 30000:30009
 
 EXPOSE 21 30000-30009
