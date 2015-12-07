@@ -25,6 +25,6 @@ RUN apt-get autoremove -y && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-CMD ["php7.0-fpm"]
+CMD ["php-fpm7.0"]
 
 EXPOSE 9000
