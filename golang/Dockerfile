@@ -2,7 +2,7 @@ FROM ubuntu:trusty
 MAINTAINER kakilangit <theguywhodrinkscoffeeandcodes@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive
-ENV GOVERSION 1.5.1
+ENV GOVERSION 1.5.2
 ENV GOOS linux
 ENV GOARCH amd64
 ENV GOPATH /gopath
@@ -16,6 +16,6 @@ RUN wget -c https://storage.googleapis.com/golang/go$GOVERSION.$GOOS-$GOARCH.tar
 	tar -xvf go$GOVERSION.$GOOS-$GOARCH.tar.gz && \
 	rm -rf go$GOVERSION.$GOOS-$GOARCH.tar.gz
 
-RUN mkdir -p "$GOPATH" 
+RUN mkdir -p "$GOPATH"
 
 WORKDIR $GOPATH
