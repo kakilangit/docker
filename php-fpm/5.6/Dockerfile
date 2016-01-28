@@ -32,12 +32,12 @@ RUN printf "deb http://ppa.launchpad.net/ondrej/php/ubuntu trusty main \ndeb-src
     gifsicle \
     libjpeg-turbo-progs
 
-ADD config/php.ini /etc/php5/fpm/php.ini
-ADD config/php-fpm.conf /etc/php5/fpm/php-fpm.conf
-ADD config/www.conf /etc/php5/fpm/pool.d/www.conf
+ADD config/php.ini /etc/php/5.6/fpm/php.ini
+ADD config/php-fpm.conf /etc/php/5.6/fpm/php-fpm.conf
+ADD config/www.conf /etc/php/5.6/fpm/pool.d/www.conf
 
-RUN rm -rf /etc/php5/cli/php.ini \
-  && ln -s /etc/php5/fpm/php.ini /etc/php5/cli/php.ini \
+RUN rm -rf /etc/php/5.6/cli/php.ini \
+  && ln -s /etc/php/5.6/fpm/php.ini /etc/php/5.6/cli/php.ini \
   && cd /tmp \
   && php -r "readfile('https://getcomposer.org/installer');" | php \
   && mv composer.phar /usr/local/bin/composer \
