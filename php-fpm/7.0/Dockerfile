@@ -1,24 +1,32 @@
-FROM debian:jessie
+FROM ubuntu:trusty
 MAINTAINER kakilangit <theguywhodrinkscoffeeandcodes@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt-get update && apt-get install -y wget \
-  && printf "deb http://packages.dotdeb.org jessie all \ndeb-src http://packages.dotdeb.org jessie all " >> /etc/apt/sources.list \
-  && wget https://www.dotdeb.org/dotdeb.gpg \
-  && apt-key add dotdeb.gpg
-
-RUN apt-get update && apt-get install -y \
+RUN printf "deb http://ppa.launchpad.net/ondrej/php/ubuntu trusty main \ndeb-src http://ppa.launchpad.net/ondrej/php/ubuntu trusty main " >> /etc/apt/sources.list \
+  && apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 4F4EA0AAE5267A6C \
+  && apt-get update && apt-get install -y \
+  php7.0-bz2 \
   php7.0-common \
-  php7.0-curl \
-  php7.0-gd \
-  php7.0-json \
-  php7.0-tidy \
-  php7.0-fpm \
-  php7.0-opcache \
-  php7.0-mysql \
-  php7.0-dev \
   php7.0-cli \
+  php7.0-curl \
+  php7.0-dbg \
+  php7.0-dev \
+  php7.0-fpm \
+  php7.0-gd \
+  php7.0-intl \
+  php7.0-json \
+  php7.0-mcrypt \
+  php7.0-mysql \
+  php7.0-opcache \
+  php7.0-pgsql \
+  php7.0-readline \
+  php7.0-tidy \
+  php7.0-xsl \
+  php-apcu  \
+  php-imagick \
+  php-memcached \
+  php-mongodb \
   memcached \
   optipng \
   gifsicle \
