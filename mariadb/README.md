@@ -1,6 +1,8 @@
 Docker for MariaDB with OQGraph
 ====================
 
+[![](https://badge.imagelayers.io/kakilangit/mariadb:latest.svg)](https://imagelayers.io/?images=kakilangit/mariadb:latest 'Get your own badge on imagelayers.io')
+
 Docker image to run a MariaDB database server with OQGraph.
 
 Usage
