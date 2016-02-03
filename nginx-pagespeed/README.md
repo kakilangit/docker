@@ -5,4 +5,4 @@ Docker
 
 Nginx 1.9.10 with PageSpeed 1.10.33.4
 
-    docker pull kakilangit/golang
+    docker pull kakilangit/nginx-pagespeed
