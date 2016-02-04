@@ -34,7 +34,7 @@ RUN apt-get -y update && apt-get -y install \
   && apt-get purge -y wget build-essential  libssl-dev zlib1g-dev  libpcre3-dev unzip \
 	&& apt-get autoremove -y \
 	&& apt-get clean \
-  && rm -rf /tmp && mkdir -p /var/ngx_pagespeed_cache && mkdir -p /var/log/nginx/
+  && rm -rf /tmp/* && mkdir -p /var/ngx_pagespeed_cache && mkdir -p /var/log/nginx/
 
 COPY ./conf /usr/local/nginx/conf
 
