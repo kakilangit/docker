@@ -1,6 +1,7 @@
 FROM debian:jessie
 MAINTAINER kakilangit <theguywhodrinkscoffeeandcodes@gmail.com>
 
+# https://downloads.mariadb.org/
 ENV DEBIAN_FRONTEND noninteractive
 ENV TERM dumb
 

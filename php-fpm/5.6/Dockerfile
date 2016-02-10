@@ -3,6 +3,7 @@ MAINTAINER kakilangit <theguywhodrinkscoffeeandcodes@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive
 
+#https://secure.php.net/downloads.php
 RUN printf "deb http://ppa.launchpad.net/ondrej/php/ubuntu trusty main \ndeb-src http://ppa.launchpad.net/ondrej/php/ubuntu trusty main " >> /etc/apt/sources.list \
   && apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 4F4EA0AAE5267A6C \
   && apt-get update && apt-get install -y \
