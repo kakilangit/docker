@@ -1,7 +1,7 @@
 Docker
 =======
 
-MariaDB with OQGraph
+MariaDB 10.1 with OQGraph
 
 [![](https://badge.imagelayers.io/kakilangit/mariadb:latest.svg)](https://imagelayers.io/?images=kakilangit/mariadb:latest 'Get your own badge on imagelayers.io')
 
@@ -20,13 +20,13 @@ PHP-FPM 5.6
 
     docker pull kakilangit/php-fpm:5.6
 
-Go 1.5.3
+Go 1.5
 
 [![](https://badge.imagelayers.io/kakilangit/golang:latest.svg)](https://imagelayers.io/?images=kakilangit/golang:latest 'Get your own badge on imagelayers.io')
 
     docker pull kakilangit/golang
 
-Nginx 1.9.10 with PageSpeed 1.10.33.4
+Nginx 1.9 with PageSpeed 1.10
 
 [![](https://badge.imagelayers.io/kakilangit/nginx-pagespeed:latest.svg)](https://imagelayers.io/?images=kakilangit/nginx-pagespeed:latest 'Get your own badge on imagelayers.io')
 
