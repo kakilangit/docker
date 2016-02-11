@@ -5,7 +5,8 @@ MAINTAINER kakilangit <theguywhodrinkscoffeeandcodes@gmail.com>
 ENV DEBIAN_FRONTEND noninteractive
 ENV TERM dumb
 
-RUN printf "deb http://mariadb.biz.net.id/repo/10.1/ubuntu trusty main" >> /etc/apt/sources.list \
+RUN groupadd -r mysql && useradd -r -g mysql mysql \
+	&& printf "deb http://mariadb.biz.net.id/repo/10.1/ubuntu trusty main" >> /etc/apt/sources.list \
 	&& apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xcbcb082a1bb943db \
 	&& apt-get update && apt-get install -y \
 	mariadb-server \

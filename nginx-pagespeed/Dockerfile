@@ -29,9 +29,8 @@ RUN apt-get -y update && apt-get -y install \
   && tar -xvzf nginx-${NGINX_VERSION}.tar.gz \
   && cd /tmp/nginx-${NGINX_VERSION}/  \
   && ./configure  ${PS_NGX_EXTRA_FLAGS} --add-module=/tmp/ngx_pagespeed-release-${NPS_VERSION}-beta \
-  && make && make install
-
-RUN apt-get purge -y wget build-essential  libssl-dev zlib1g-dev  libpcre3-dev unzip \
+  && make && make install \
+  && apt-get purge -y wget build-essential  libssl-dev zlib1g-dev  libpcre3-dev unzip \
 	&& apt-get autoremove -y \
 	&& apt-get clean \
   && rm -rf /tmp/* && mkdir -p /var/ngx_pagespeed_cache && mkdir -p /var/log/nginx/
