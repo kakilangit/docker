@@ -4,14 +4,12 @@ MAINTAINER kakilangit <theguywhodrinkscoffeeandcodes@gmail.com>
 ENV DEBIAN_FRONTEND noninteractive
 
 # https://secure.php.net/downloads.php
-RUN printf "deb http://ppa.launchpad.net/ondrej/php/ubuntu trusty main \ndeb-src http://ppa.launchpad.net/ondrej/php/ubuntu trusty main " >> /etc/apt/sources.list \
-  && apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 4F4EA0AAE5267A6C \
+RUN apt-get install -y language-pack-en-base software-properties-common && LC_ALL=en_US.UTF-8 add-apt-repository ppa:ondrej/php \
   && apt-get update && apt-get install -y \
   php7.0-bz2 \
   php7.0-common \
   php7.0-cli \
   php7.0-curl \
-  php7.0-dbg \
   php7.0-dev \
   php7.0-fpm \
   php7.0-gd \
@@ -42,6 +40,7 @@ RUN rm -rf /etc/php/7.0/cli/php.ini \
   && cd /tmp \
   && php -r "readfile('https://getcomposer.org/installer');" | php \
   && mv composer.phar /usr/local/bin/composer \
+  && apt-get remove -y software-properties-common \
   && apt-get autoremove -y \
   && apt-get autoclean \
   && apt-get clean \
