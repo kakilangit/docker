@@ -20,7 +20,7 @@ PHP-FPM 5.6
 
     docker pull kakilangit/php-fpm:5.6
 
-Go 1.5
+Go 1.6
 
 [![](https://badge.imagelayers.io/kakilangit/golang:latest.svg)](https://imagelayers.io/?images=kakilangit/golang:latest 'Get your own badge on imagelayers.io')
 

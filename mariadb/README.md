@@ -1,4 +1,4 @@
-Docker for MariaDB 10.1.11 with OQGraph
+Docker for MariaDB 10.1.12 with OQGraph
 ====================
 
 [![](https://badge.imagelayers.io/kakilangit/mariadb:latest.svg)](https://imagelayers.io/?images=kakilangit/mariadb:latest 'Get your own badge on imagelayers.io')
