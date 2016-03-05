@@ -3,6 +3,6 @@ Docker
 
 [![](https://badge.imagelayers.io/kakilangit/nginx-pagespeed:latest.svg)](https://imagelayers.io/?images=kakilangit/nginx-pagespeed:latest 'Get your own badge on imagelayers.io')
 
-Nginx 1.9.12 with PageSpeed 1.10.33.5
+Nginx 1.9.12 with PageSpeed 1.10.33.6
 
     docker pull kakilangit/nginx-pagespeed
