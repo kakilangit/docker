@@ -28,9 +28,7 @@ RUN apt-get install -y language-pack-en-base software-properties-common && LC_AL
     php5.6-readline \
     php5.6-recode \
     php5.6-sqlite3 \
-    php5.6-xml \
     php5.6-xmlrpc \
-    php5.6-xsl \
     php5.6-zip \
     php5.6-tidy \
     php-apcu  \
