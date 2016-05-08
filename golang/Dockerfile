@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		make \
 	&& rm -rf /var/lib/apt/lists/*
 
-ENV GOLANG_VERSION 1.6.1
+ENV GOLANG_VERSION 1.6.2
 ENV GOLANG_DOWNLOAD_URL https://golang.org/dl/go$GOLANG_VERSION.linux-amd64.tar.gz
 ENV GOLANG_DOWNLOAD_SHA256 6d894da8b4ad3f7f6c295db0d73ccc3646bce630e1c43e662a0120681d47e988
 
