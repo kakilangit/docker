@@ -4,7 +4,7 @@ MAINTAINER kakilangit <theguywhodrinkscoffeeandcodes@gmail.com>
 ENV DEBIAN_FRONTEND noninteractive
 
 # https://secure.php.net/downloads.php
-RUN apt-get install -y language-pack-en-base software-properties-common && LC_ALL=en_US.UTF-8 add-apt-repository ppa:ondrej/php \
+RUN apt-get update && apt-get install -y language-pack-en-base software-properties-common && LC_ALL=en_US.UTF-8 add-apt-repository ppa:ondrej/php \
   && apt-get update && apt-get install -y \
   php7.0-bz2 \
   php7.0-bcmath \
