@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		make \
 	&& rm -rf /var/lib/apt/lists/*
 
-ENV GOLANG_VERSION 1.6.2
+ENV GOLANG_VERSION 1.6.3
 ENV GOLANG_DOWNLOAD_URL https://storage.googleapis.com/golang/go$GOLANG_VERSION.linux-amd64.tar.gz
 
 RUN curl -fsSL "$GOLANG_DOWNLOAD_URL" -o golang.tar.gz \
