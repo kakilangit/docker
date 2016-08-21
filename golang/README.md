@@ -1,8 +1,8 @@
 Docker
 =======
 
-[![](https://badge.imagelayers.io/kakilangit/golang:latest.svg)](https://imagelayers.io/?images=kakilangit/golang:latest 'Get your own badge on imagelayers.io')
+[![](https://images.microbadger.com/badges/image/kakilangit/golang.svg)](http://microbadger.com/images/kakilangit/golang "Get your own image badge on microbadger.com")
 
-Go 1.6.3
+Go 1.7
 
     docker pull kakilangit/golang

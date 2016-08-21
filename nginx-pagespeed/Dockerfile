@@ -3,9 +3,9 @@ MAINTAINER kakilangit <theguywhodrinkscoffeeandcodes@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive
 # http://nginx.org/en/download.html
-ENV NGINX_VERSION 1.11.2
+ENV NGINX_VERSION 1.11.3
 # https://github.com/pagespeed/ngx_pagespeed/releases
-ENV NPS_VERSION 1.11.33.2
+ENV NPS_VERSION 1.11.33.3
 ENV PS_NGX_EXTRA_FLAGS  "--prefix=/etc/nginx --sbin-path=/usr/local/bin --conf-path=/etc/nginx/conf/nginx.conf --error-log-path=/var/log/nginx/error.log --http-log-path=/var/log/nginx/access.log --with-http_ssl_module --with-http_realip_module --with-http_addition_module --with-http_sub_module --with-http_dav_module --with-http_flv_module --with-http_mp4_module --with-http_gunzip_module --with-http_gzip_static_module --with-http_random_index_module --with-http_secure_link_module --with-http_stub_status_module --with-http_auth_request_module --with-mail --with-mail_ssl_module --with-file-aio --with-ipv6 --with-threads --with-stream --with-stream_ssl_module --with-http_slice_module --with-http_v2_module"
 
 RUN apt-get -y update && apt-get -y install \

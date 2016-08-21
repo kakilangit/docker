@@ -1,8 +1,8 @@
 Docker
 =======
 
-[![](https://badge.imagelayers.io/kakilangit/nginx-pagespeed:latest.svg)](https://imagelayers.io/?images=kakilangit/nginx-pagespeed:latest 'Get your own badge on imagelayers.io')
+[![](https://images.microbadger.com/badges/image/kakilangit/nginx-pagespeed.svg)](http://microbadger.com/images/kakilangit/nginx-pagespeed "Get your own image badge on microbadger.com")
 
-Nginx 1.11.2 with PageSpeed 1.11.33.2
+Nginx 1.11.3 with PageSpeed 1.11.33.3
 
     docker pull kakilangit/nginx-pagespeed

@@ -1,8 +1,8 @@
 Docker
 =======
 
-[![](https://badge.imagelayers.io/kakilangit/php-fpm:7.0.svg)](https://imagelayers.io/?images=kakilangit/php-fpm:7.0 'Get your own badge on imagelayers.io')
+[![](https://images.microbadger.com/badges/image/kakilangit/php-fpm:7.0.svg)](http://microbadger.com/images/kakilangit/php-fpm:7.0 "Get your own image badge on microbadger.com")
 
-PHP 7.0.7
+PHP 7.0.10
 
     docker pull kakilangit/php-fpm:7.0
