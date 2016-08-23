@@ -42,9 +42,9 @@ RUN apt-get update && apt-get install -y language-pack-en-base software-properti
   gifsicle \
   libjpeg-turbo-progs
 
-ADD config/php.ini /etc/php/7.0/fpm/php.ini
-ADD config/php-fpm.conf /etc/php/7.0/fpm/php-fpm.conf
-ADD config/www.conf /etc/php/7.0/fpm/pool.d/www.conf
+COPY config/php.ini /etc/php/7.0/fpm/php.ini
+COPY config/php-fpm.conf /etc/php/7.0/fpm/php-fpm.conf
+COPY config/www.conf /etc/php/7.0/fpm/pool.d/www.conf
 
 RUN rm -rf /etc/php/7.0/cli/php.ini \
   && ln -s /etc/php/7.0/fpm/php.ini /etc/php/7.0/cli/php.ini \

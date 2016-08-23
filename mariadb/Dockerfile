@@ -17,9 +17,9 @@ RUN groupadd -r mysql && useradd -r -g mysql mysql \
   && apt-get clean \
 	&& rm -rf /var/lib/mysql/* /var/lib/apt/lists/*
 
-ADD config/my.cnf /etc/mysql/my.cnf
-ADD config/create_mariadb_admin_user.sh /create_mariadb_admin_user.sh
-ADD config/run.sh /run.sh
+COPY config/my.cnf /etc/mysql/my.cnf
+COPY config/create_mariadb_admin_user.sh /create_mariadb_admin_user.sh
+COPY config/run.sh /run.sh
 RUN chmod 775 /*.sh
 
 VOLUME  ["/etc/mysql", "/var/lib/mysql"]
