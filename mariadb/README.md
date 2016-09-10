@@ -1,4 +1,4 @@
-Docker for MariaDB 10.1.16 with OQGraph
+Docker for MariaDB 10.1.17 with OQGraph
 ====================
 
 [![](https://images.microbadger.com/badges/image/kakilangit/mariadb.svg)](http://microbadger.com/images/kakilangit/mariadb "Get your own image badge on microbadger.com")
@@ -8,7 +8,7 @@ Docker image to run a MariaDB database server with OQGraph.
 Usage
 -----
 
-To create the image `kakilangit/mariadb`, execute the following command on the tutum-docker-mariadb folder:
+To create the image `kakilangit/mariadb`, execute the following command:
 
         docker build -t kakilangit/mariadb .
 
