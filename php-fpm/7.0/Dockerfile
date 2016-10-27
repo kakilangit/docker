@@ -1,11 +1,12 @@
-FROM ubuntu:trusty
+FROM debian:jessie
 MAINTAINER kakilangit <theguywhodrinkscoffeeandcodes@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive
 
 # https://secure.php.net/downloads.php
-RUN apt-get update && apt-get install -y language-pack-en-base software-properties-common && LC_ALL=en_US.UTF-8 add-apt-repository ppa:ondrej/php \
-  && apt-get update && apt-get install -y \
+RUN apt-get update && apt-get install -y wget && wget https://www.dotdeb.org/dotdeb.gpg && apt-key add dotdeb.gpg
+RUN echo "deb http://packages.dotdeb.org jessie all\ndeb-src http://packages.dotdeb.org jessie all" >> /etc/apt/sources.list
+RUN apt-get update && apt-get install -y \
   php7.0-bz2 \
   php7.0-bcmath \
   php7.0-cgi \
@@ -32,11 +33,8 @@ RUN apt-get update && apt-get install -y language-pack-en-base software-properti
   php7.0-xsl \
   php7.0-xml \
   php7.0-xmlrpc \
-  php7.0-zip \
-  php-apcu  \
-  php-imagick \
-  php-memcached \
-  php-mongodb \
+  php7.0-zip
+RUN apt-get install -y \
   memcached \
   optipng \
   gifsicle \
@@ -51,7 +49,6 @@ RUN rm -rf /etc/php/7.0/cli/php.ini \
   && cd /tmp \
   && php -r "readfile('https://getcomposer.org/installer');" | php \
   && mv composer.phar /usr/local/bin/composer \
-  && apt-get remove -y software-properties-common \
   && apt-get autoremove -y \
   && apt-get autoclean \
   && apt-get clean \
