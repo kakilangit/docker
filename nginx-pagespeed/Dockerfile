@@ -3,7 +3,7 @@ MAINTAINER kakilangit <theguywhodrinkscoffeeandcodes@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive
 # http://nginx.org/en/download.html
-ENV NGINX_VERSION 1.11.5
+ENV NGINX_VERSION 1.11.6
 # https://github.com/pagespeed/ngx_pagespeed/releases
 # Stable, yay
 ENV NPS_VERSION 1.11.33.4

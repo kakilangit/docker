@@ -1,4 +1,4 @@
-Docker for MariaDB 10.1.18 with OQGraph
+Docker for MariaDB 10.1.19 with OQGraph
 ====================
 
 [![](https://images.microbadger.com/badges/image/kakilangit/mariadb.svg)](http://microbadger.com/images/kakilangit/mariadb "Get your own image badge on microbadger.com")
