@@ -26,7 +26,7 @@ PHP-FPM 5.6
 
     docker pull kakilangit/php-fpm:5.6
 
-Go 1.7
+Go 1.8
 
 [![](https://images.microbadger.com/badges/image/kakilangit/golang.svg)](http://microbadger.com/images/kakilangit/golang "Get your own image badge on microbadger.com")
 
