@@ -3,6 +3,6 @@ Docker
 
 [![](https://images.microbadger.com/badges/image/kakilangit/golang.svg)](http://microbadger.com/images/kakilangit/golang "Get your own image badge on microbadger.com")
 
-Go 1.8
+Go 1.8.1
 
     docker pull kakilangit/golang
