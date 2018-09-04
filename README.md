@@ -1,11 +1,29 @@
 Docker
 =======
 
+MariaDB 10.3
+
+[![](https://images.microbadger.com/badges/image/kakilangit/mariadb:10.3.svg)](http://microbadger.com/images/kakilangit/mariadb "Get your own image badge on microbadger.com")
+
+    docker pull kakilangit/mariadb:10.3
+
+MariaDB 10.2
+
+[![](https://images.microbadger.com/badges/image/kakilangit/mariadb:10.2.svg)](http://microbadger.com/images/kakilangit/mariadb "Get your own image badge on microbadger.com")
+
+    docker pull kakilangit/mariadb:10.2
+
 MariaDB 10.1 with OQGraph
 
-[![](https://images.microbadger.com/badges/image/kakilangit/mariadb.svg)](http://microbadger.com/images/kakilangit/mariadb "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/kakilangit/mariadb:10.1.svg)](http://microbadger.com/images/kakilangit/mariadb "Get your own image badge on microbadger.com")
 
-    docker pull kakilangit/mariadb
+    docker pull kakilangit/mariadb:10.1
+
+PHP-FPM 7.2
+
+[![](https://images.microbadger.com/badges/image/kakilangit/php-fpm:7.2.svg)](http://microbadger.com/images/kakilangit/php-fpm:7.2 "Get your own image badge on microbadger.com")
+
+    docker pull kakilangit/php-fpm:7.2
 
 
 PHP-FPM 7.1
@@ -32,7 +50,7 @@ Go 1.8
 
     docker pull kakilangit/golang
 
-Nginx 1.11 with PageSpeed 1.12
+Nginx 1.15 with PageSpeed 1.13
 
 [![](https://images.microbadger.com/badges/image/kakilangit/nginx-pagespeed.svg)](http://microbadger.com/images/kakilangit/nginx-pagespeed "Get your own image badge on microbadger.com")
 
