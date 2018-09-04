@@ -1,9 +1,9 @@
-Docker for MariaDB 10.1.35 with OQGraph
+Docker for MariaDB 10.3.9 
 ====================
 
-[![](https://images.microbadger.com/badges/image/kakilangit/mariadb:10.1.svg)](http://microbadger.com/images/kakilangit/mariadb "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/kakilangit/mariadb:10.3.svg)](http://microbadger.com/images/kakilangit/mariadb "Get your own image badge on microbadger.com")
 
-Docker image to run a MariaDB database server with OQGraph.
+Docker image to run a MariaDB database server.
 
 Usage
 -----

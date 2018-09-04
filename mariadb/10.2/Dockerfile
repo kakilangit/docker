@@ -1,16 +1,17 @@
-FROM debian:jessie
+FROM debian:stretch
 MAINTAINER kakilangit <theguywhodrinkscoffeeandcodes@gmail.com>
 
 # https://downloads.mariadb.org/
 ENV DEBIAN_FRONTEND noninteractive
 ENV TERM dumb
 
+RUN apt-get update && apt-get install -y software-properties-common dirmngr \
+	&& apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 0xF1656F24C74CD1D8 \
+	&& add-apt-repository 'deb [arch=amd64,i386,ppc64el] http://mirrors.n-ix.net/mariadb/repo/10.2/debian stretch main'
+
 RUN groupadd -r mysql && useradd -r -g mysql mysql \
-	&& printf "deb http://mariadb.biz.net.id/repo/10.2/ubuntu trusty main" >> /etc/apt/sources.list \
-	&& apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0xcbcb082a1bb943db \
 	&& apt-get update && apt-get install -y \
 	mariadb-server \
-	mariadb-plugin-oqgraph \
 	pwgen \
 	&& apt-get autoremove -y \
   && apt-get autoclean \
