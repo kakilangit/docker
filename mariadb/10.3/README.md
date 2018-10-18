@@ -1,4 +1,4 @@
-Docker for MariaDB 10.3.9 
+Docker for MariaDB 10.3.10
 ====================
 
 [![](https://images.microbadger.com/badges/image/kakilangit/mariadb:10.3.svg)](http://microbadger.com/images/kakilangit/mariadb "Get your own image badge on microbadger.com")
